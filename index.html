@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <section class="hero is-link">
+        <div class="hero-body">
+          <p class="title">Weather Dashboard</p>
+          <p class="subtitle">input your location</p>
+        </div>
+      </section>
+    </header>
+    <div id="searchArea" class="control" class="columns" class="columns is-8">
+     <div class="field has-addons">
+     <div class="control" >
+        <input  id="city-search" class="input" type="text" placeholder="Search for Weather" class="city-search">
+     </div>
+     <div class="control" id="submit">
+         <a class="button is-info">
+            <img src="magnify.png">
+         </a>
+     </div>
+    </div>
+    <div id="sugestedCities">
+    </div>
+    <div id="apiContainer">
+    </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
