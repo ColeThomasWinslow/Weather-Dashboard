@@ -4,7 +4,7 @@ const submit = document.querySelector("#submit");
 var searchBar = document.querySelector("#searchBar")
 
 function getWeather(city){
-    const weatherUrl =`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
+    const weatherUrl =`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
     console.log(weatherUrl)
     fetch(weatherUrl)
     .then((data)=> data.json())
